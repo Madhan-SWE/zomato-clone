@@ -1,0 +1,102 @@
+body
+{
+    background-color: grey;
+}
+.indexHead
+{
+    height: 400px;
+    background-image: url("../Images/banquet.jpg");
+    background-size: 100% 100%;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.title
+{
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    padding-top: 100px;
+}
+.titleBelow
+{
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    margin: 15px;
+}
+.bold
+{
+    font-weight: bold;
+}
+.searchArea
+{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+input
+{
+    padding: 5px;
+    font-size: 20px;
+    width: 400px;
+    border: 0px;
+}
+input:focus{
+    outline: none;
+}
+.suggestionsDiv
+{
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: 160px;
+}
+.resDiv
+{
+    
+    display: block;
+    clear: both;
+}
+.resDiv:hover
+{
+    background-color: rgb(230, 222, 222);
+}
+.resImgDiv
+{
+    padding: 5px;
+    width: 20%;
+    display: inline;
+    float: left;
+}
+
+.hotelDiv
+{
+    display: inline;
+    float: right;
+    text-align: center;
+    width: 75%;
+    padding: 0px;
+}
+h4
+{
+    padding: 0px;}
+.ratingDiv
+{
+    text-align: center;
+    justify-content: center;
+    display: Inline-block;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.orderNowbtn
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.orderNowbtn:hover{
+    color: red;
+}
