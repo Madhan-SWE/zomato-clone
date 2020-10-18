@@ -1,235 +1,202 @@
-body
-{
-    background-color: rgb(82, 82, 82);
+body {
+  background-color: rgb(82, 82, 82);
 }
-.indexHead
-{
-    height: 400px;
-    background-image: url("../Images/banquet.jpg");
-    background-size: 100% 100%;
-    text-align: center;
+.indexHead {
+  height: 400px;
+  background-image: url("../Images/banquet.jpg");
+  background-size: 100% 100%;
+  text-align: center;
 }
 
-.title
-{
-    font-size: 70px;
-    font-weight: bold;
-    color: white;
-    padding-top: 100px;
-    font-family: 'Passion One', cursive;
+.title {
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  padding-top: 100px;
+  font-family: "Passion One", cursive;
 }
-.titleBelow
-{
-    position: relative;
-    z-index: 1;
-    font-size: 30px;
-    color: white;
-    margin: 15px;
-    font-family: 'Squada One', cursive;
+.titleBelow {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  color: white;
+  margin: 15px;
+  font-family: "Squada One", cursive;
 }
-.bold
-{
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
-.searchArea
-{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
+.searchArea {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
 }
-input
-{
-    padding: 5px;
-    font-size: 20px;
-    width: 400px;
-    border: 0px;
+input {
+  padding: 5px;
+  font-size: 20px;
+  width: 400px;
+  border: 0px;
 }
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
-.suggestionsDiv
-{
-    background-color: rgb(254, 254, 255);
-    width: 300px;
-    margin: 0 auto;
-    position: absolute;
-    left: 650px;
-    box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
-    z-index: 1;
+.suggestionsDiv {
+  background-color: rgb(254, 254, 255);
+  width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  left: 650px;
+  box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
+  z-index: 1;
 }
-.resDiv
-{
-    
-    display: block;
-    clear: both;
+.resDiv {
+  display: block;
+  clear: both;
 }
-.resDiv:hover
-{
-    background-color: rgb(230, 222, 222);
+.resDiv:hover {
+  background-color: rgb(230, 222, 222);
 }
-.resImgDiv
-{
-    padding: 5px;
-    width: 20%;
-    display: inline;
-    float: left;
+.resImgDiv {
+  padding: 5px;
+  width: 20%;
+  display: inline;
+  float: left;
 }
 
-.hotelDiv
-{
-    display: inline;
-    float: right;
-    text-align: center;
-    width: 75%;
-    padding: 0px;
+.hotelDiv {
+  display: inline;
+  float: right;
+  text-align: center;
+  width: 75%;
+  padding: 0px;
 }
-h4
-{
-    padding: 0px;}
-.ratingDiv
-{
-    text-align: center;
-    justify-content: center;
-    display: Inline-block;
-    padding-left: 50px;
-    padding-top: 10px;
+h4 {
+  padding: 0px;
 }
-.orderNowbtn
-{
-    text-align: center;
-    font-weight: bold;
-    color: green;
+.ratingDiv {
+  text-align: center;
+  justify-content: center;
+  display: Inline-block;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.orderNowbtn {
+  text-align: center;
+  font-weight: bold;
+  color: green;
 }
 
-.orderNowbtn:hover{
-    color: red;
-    cursor: pointer;
-    transform: scale(1.06);
+.orderNowbtn:hover {
+  color: red;
+  cursor: pointer;
+  transform: scale(1.06);
 }
-#suggestions
-{
-    visibility: hidden;
+#suggestions {
+  visibility: hidden;
 }
-.footer
-{
-    position: relative;
-    clear: both;
-    background-color: white;
-    display: block;
-    margin-top: 200px;
-    padding: 10px;
-    border-top: 2px solid black;
+.footer {
+  position: relative;
+  clear: both;
+  background-color: white;
+  display: block;
+  margin-top: 200px;
+  padding: 10px;
+  border-top: 2px solid black;
 }
-.restaurantImg
-{
-    width: 800px;
-    height: 450px;
-    overflow: hidden;
+.restaurantImg {
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
 }
-#restaurantImg:hover
-{
-    transform: scale(1.05);
-    z-index: 1;
-    overflow: hidden;
-    transition: transform .5s ease;
+#restaurantImg:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  overflow: hidden;
+  transition: transform 0.5s ease;
 }
-#restaurantImg:not(:hover)
-{
-    transform: scale(1);
-    z-index: 1;
-    overflow: hidden;
-    transition: transform .5s ease;
+#restaurantImg:not(:hover) {
+  transform: scale(1);
+  z-index: 1;
+  overflow: hidden;
+  transition: transform 0.5s ease;
 }
 
-.collectionsContainer
-{
-    position: relative;
-    left: 10%;
-    right: 10%;
-    margin-top: 20px;
-    color: white;
+.collectionsContainer {
+  position: relative;
+  left: 10%;
+  right: 10%;
+  margin-top: 20px;
+  color: white;
 }
 
-.collectionItem
-{
-    position: relative;
-    width: 20%;
-    height: 200px;
-    display: inline-block;
-    float: left;
-    margin: 5px;
-    border-radius: 15px;
+.collectionItem {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  display: inline-block;
+  float: left;
+  margin: 5px;
+  border-radius: 15px;
 }
-.collectionTextDiv
-{
-    position: absolute;
-    bottom: 0;
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
+.collectionTextDiv {
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
 }
-.collectionItem
-{
-    overflow: hidden;
+.collectionItem {
+  overflow: hidden;
 }
-.collectionImg
-{
-    background-color: rgb(104, 100, 100);
+.collectionImg {
+  background-color: rgb(104, 100, 100);
 }
-.collectionImg:hover{
-    transform: scale(1.5);
-    overflow: hidden;
-    transition: transform 0.2s ease;
-
+.collectionImg:hover {
+  transform: scale(1.5);
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
-.collectionImg:not(:hover)
-{
-    transform: scale(1);
-    z-index: 1;
-    overflow: hidden;
-    transition: transform 5s ease;
+.collectionImg:not(:hover) {
+  transform: scale(1);
+  z-index: 1;
+  overflow: hidden;
+  transition: transform 5s ease;
 }
 @media only screen and (max-width: 1070px) {
-    input
-{
+  input {
     padding: 5px;
     font-size: 15px;
     width: 250px;
     border: 0px;
-}
+  }
 }
 
 @media only screen and (max-width: 790px) {
-    input
-{
+  input {
     padding: 5px;
     font-size: 15px;
     width: 100px;
     border: 0px;
-}
-.suggestionsDiv
-{
+  }
+  .suggestionsDiv {
     background-color: rgb(254, 254, 255);
     width: 300px;
     position: absolute;
     left: -500px;
     box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
     margin: 0;
-
-}
-.collectionItem
-{
+  }
+  .collectionItem {
     position: relative;
     width: 40%;
     height: 200px;
     display: inline-block;
     float: left;
     margin: 5px;
-}
   }
-  @media only screen and (max-width: 1050px) {
-  .suggestionsDiv
-{
+}
+@media only screen and (max-width: 1050px) {
+  .suggestionsDiv {
     background-color: rgb(254, 254, 255);
     width: 300px;
     margin: 0 auto;
@@ -237,16 +204,17 @@ h4
     left: 400px;
     box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
     z-index: 1;
-}}
+  }
+}
 
 @media only screen and (max-width: 765px) {
-    .suggestionsDiv
-  {
-      background-color: rgb(254, 254, 255);
-      width: 300px;
-      margin: 0 auto;
-      position: absolute;
-      left: 200px;
-      box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
-      z-index: 1;
-  }}
+  .suggestionsDiv {
+    background-color: rgb(254, 254, 255);
+    width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    left: 200px;
+    box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
+    z-index: 1;
+  }
+}

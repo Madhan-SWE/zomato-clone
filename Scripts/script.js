@@ -17,13 +17,13 @@ function getLocation() {
 function showPosition(position) {
   latitude = position.coords.latitude;
   longitude = position.coords.longitude;
-  console.log(longitude);
-  console.log(latitude);
+  //console.log(longitude);
+  //console.log(latitude);
 }
 
 function getLocationSuggestions() {
   let tempLocation = document.getElementById("location").value;
-  console.log(tempLocation);
+  //console.log(tempLocation);
   if (tempLocation !== "") {
     currentLocation = tempLocation;
   } else {
@@ -40,17 +40,17 @@ function getLocationSuggestions() {
       "user-key": userKey2,
     },
   });
-  console.log("key: ---", userKey2)
+  //console.log("key: ---", userKey2);
   locationFetch
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
+      //console.log(json);
       if (json["location_suggestions"].length > 0) {
         entityType = json["location_suggestions"][0]["entity_type"];
         entityId = json["location_suggestions"][0]["entity_id"];
       }
-      console.log("--", entityType);
-      console.log("==", entityId);
+      //console.log("--", entityType);
+      //console.log("==", entityId);
     })
     .catch((err) => console.log("ERROR :", err));
 }
@@ -67,7 +67,7 @@ function searchQuery() {
     entityType +
     "&q=" +
     query;
-  console.log(url);
+  //console.log(url);
 
   let searchFetch = fetch(url, {
     method: "GET",
@@ -105,7 +105,7 @@ function searchQuery() {
           ).length === 0
         ) {
           selectedRestaurants.push(hasDelieveryRestaurants[i]);
-          console.log(hasDelieveryRestaurants[i]["restaurant"]["name"]);
+          //console.log(hasDelieveryRestaurants[i]["restaurant"]["name"]);
         }
       }
 
@@ -128,7 +128,7 @@ function searchQuery() {
         hotelDiv.setAttribute("class", "hotelDiv");
 
         let hotelName = document.createElement("span");
-        console.log(";;;;;", selectedRestaurants[i]["restaurant"]["name"]);
+        //console.log(";;;;;", selectedRestaurants[i]["restaurant"]["name"]);
         hotelName.innerText = selectedRestaurants[i]["restaurant"]["name"];
         hotelDiv.append(hotelName);
 
@@ -172,13 +172,13 @@ function searchQuery() {
         suggestions[0].removeChild(suggestions[0].firstChild);
       }
       suggestions[0].append(suggestionsDiv);
-      console.log(suggestions);
+      //console.log(suggestions);
       document.getElementById("suggestions").style.visibility = "visible";
     });
 }
 
 function storeInSession(item) {
-  console.log(item.dataset.resid);
+  //console.log(item.dataset.resid);
   sessionStorage.setItem("resid", item.dataset.resid);
   sessionStorage.setItem("currentLocation", currentLocation);
   window.location.href = "orderPage.html";
@@ -187,8 +187,8 @@ function storeInSession(item) {
 document.addEventListener("click", function (event) {
   let exTarget = document.getElementById("suggestions");
   var isClickInside = exTarget.contains(event.target);
-  console.log(isClickInside);
-  console.log(event.target);
+  //console.log(isClickInside);
+  //console.log(event.target);
   if (!isClickInside) {
     exTarget.style.visibility = "hidden";
   }
@@ -197,7 +197,7 @@ document.addEventListener("click", function (event) {
 function addCollections() {
   let url =
     "https://developers.zomato.com/api/v2.1/collections?city_id=" + entityId;
-  console.log(url);
+  //console.log(url);
   let collectionsFetch = fetch(url, {
     method: "GET",
     headers: {
@@ -225,7 +225,7 @@ function addCollections() {
         " based on trends";
       collectionsDiv.appendChild(p);
       for (let i = 0; i < collectionsData.collections.length; i++) {
-        console.log(i);
+        //console.log(i);
         let collectionItem = document.createElement("div");
         collectionItem.setAttribute("class", "collectionItem");
 
@@ -249,15 +249,14 @@ function addCollections() {
         collectionItem.append(collectionImg);
         collectionItem.appendChild(collectionTextDiv);
         collectionsDiv.append(collectionItem);
-        console.log(collectionsDiv);
+        //console.log(collectionsDiv);
       }
       collectionsSection.append(collectionsDiv);
     })
     .catch((err) => console.log(err));
 }
 
-function loadBody()
-{
-getLocationSuggestions();
-addCollections();
+function loadBody() {
+  getLocationSuggestions();
+  addCollections();
 }

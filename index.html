@@ -1,36 +1,37 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Squada+One&display=swap" rel="stylesheet">
+< html lang = "en" > <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Styles/index.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Squada+One&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="shortcut icon" href="https://b.zmtcdn.com/images/widgets/zlogo_s_r_32.png" type="image/x-icon">
-    <title>   
-        ZOMATO
-    </title>
+    <link rel="shortcut icon" href="https://b.zmtcdn.com/images/widgets/zlogo_s_r_32.png" type="image/x-icon"/>
+    <title>ZOMATO</title>
 </head>
 <body onload="loadBody()">
-<div class="indexHead">
-    <div class="title">ZOMATO</div>
-    <div class="titleBelow">Discover the best food & drinks in <span id="currentLocation">Chennai</span></div>
-    <div class="searchBar">
-        <span class="searchArea">
-        <i class="fa fa-map-marker" style="color:red" aria-hidden="true"></i>
-        <input name="location" id="location" onkeyup="getLocationSuggestions()" placeholder="chennai">
-        <i class="fa fa-caret-down" style="font-size:24px"></i>
-        <span style="font-size: 40px;">|</span> 
-        <input name="restaurant" id="query" onkeyup="searchQuery()"  placeholder="Search for restaurant, cuisaine or dish">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        </span>
+    <div class="indexHead">
+        <div class="title">ZOMATO</div>
+        <div class="titleBelow">
+            Discover the best food & drinks in
+            <span id="currentLocation">Chennai</span>
+        </div>
+        <div class="searchBar">
+            <span class="searchArea">
+                <i class="fa fa-map-marker" style="color: red" aria-hidden="true"></i>
+                <input name="location" id="location" onkeyup="getLocationSuggestions()" placeholder="chennai"/>
+                <i class="fa fa-caret-down" style="font-size: 24px"></i>
+                <span style="font-size: 40px">|</span>
+                <input name="restaurant" id="query" onkeyup="searchQuery()" placeholder="Search for restaurant, cuisaine or dish"/>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="suggesitons" id="suggestions"></div>
     </div>
-    <div class="suggesitons" id="suggestions">
-</div>
-</div>
-<div id="collections"></div>
-<div class="footer">
-    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2020 &copy Zomato™ Pvt Ltd. All rights reserved.
-</div>
-<script src="Scripts/script.js"></script>
-</body>
-</html>
+    <div id="collections"></div>
+    <div class="footer">
+        By continuing past this page, you agree to our Terms of Service, Cookie
+              Policy, Privacy Policy and Content Policies. All trademarks are properties
+              of their respective owners. 2008-2020 &copy Zomato™ Pvt Ltd. All rights
+              reserved.
+    </div>
+    <script src="Scripts/script.js"></script>
+</body></html>
