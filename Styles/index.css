@@ -1,13 +1,12 @@
 body
 {
-    background-color: grey;
+    background-color: rgb(82, 82, 82);
 }
 .indexHead
 {
     height: 400px;
     background-image: url("../Images/banquet.jpg");
     background-size: 100% 100%;
-    opacity: 0.8;
     text-align: center;
 }
 
@@ -17,6 +16,7 @@ body
     font-weight: bold;
     color: white;
     padding-top: 100px;
+    font-family: 'Passion One', cursive;
 }
 .titleBelow
 {
@@ -25,6 +25,7 @@ body
     font-size: 30px;
     color: white;
     margin: 15px;
+    font-family: 'Squada One', cursive;
 }
 .bold
 {
@@ -48,11 +49,13 @@ input:focus{
 }
 .suggestionsDiv
 {
-    background-color: white;
+    background-color: rgb(254, 254, 255);
     width: 300px;
     margin: 0 auto;
-    position: relative;
-    left: 160px;
+    position: absolute;
+    left: 650px;
+    box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
+    z-index: 1;
 }
 .resDiv
 {
@@ -95,8 +98,155 @@ h4
 {
     text-align: center;
     font-weight: bold;
+    color: green;
 }
 
 .orderNowbtn:hover{
     color: red;
+    cursor: pointer;
+    transform: scale(1.06);
 }
+#suggestions
+{
+    visibility: hidden;
+}
+.footer
+{
+    position: relative;
+    clear: both;
+    background-color: white;
+    display: block;
+    margin-top: 200px;
+    padding: 10px;
+    border-top: 2px solid black;
+}
+.restaurantImg
+{
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+}
+#restaurantImg:hover
+{
+    transform: scale(1.05);
+    z-index: 1;
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+#restaurantImg:not(:hover)
+{
+    transform: scale(1);
+    z-index: 1;
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+.collectionsContainer
+{
+    position: relative;
+    left: 10%;
+    right: 10%;
+    margin-top: 20px;
+    color: white;
+}
+
+.collectionItem
+{
+    position: relative;
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    border-radius: 15px;
+}
+.collectionTextDiv
+{
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.collectionItem
+{
+    overflow: hidden;
+}
+.collectionImg
+{
+    background-color: rgb(104, 100, 100);
+}
+.collectionImg:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+
+}
+.collectionImg:not(:hover)
+{
+    transform: scale(1);
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 5s ease;
+}
+@media only screen and (max-width: 1070px) {
+    input
+{
+    padding: 5px;
+    font-size: 15px;
+    width: 250px;
+    border: 0px;
+}
+}
+
+@media only screen and (max-width: 790px) {
+    input
+{
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    border: 0px;
+}
+.suggestionsDiv
+{
+    background-color: rgb(254, 254, 255);
+    width: 300px;
+    position: absolute;
+    left: -500px;
+    box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
+    margin: 0;
+
+}
+.collectionItem
+{
+    position: relative;
+    width: 40%;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+}
+  }
+  @media only screen and (max-width: 1050px) {
+  .suggestionsDiv
+{
+    background-color: rgb(254, 254, 255);
+    width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    left: 400px;
+    box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
+    z-index: 1;
+}}
+
+@media only screen and (max-width: 765px) {
+    .suggestionsDiv
+  {
+      background-color: rgb(254, 254, 255);
+      width: 300px;
+      margin: 0 auto;
+      position: absolute;
+      left: 200px;
+      box-shadow: 1px 1px 5px 5px rgb(212, 204, 204);
+      z-index: 1;
+  }}

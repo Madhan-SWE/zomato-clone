@@ -1,0 +1,201 @@
+.orderPageHead
+{
+    text-align: center;
+    border-bottom: 2px solid rgb(187, 182, 182);
+    padding: 0px;
+    padding: 10px;
+}
+#orderPageTitle
+{
+    font-weight: 1000;
+    font-size: 30px;
+}
+body
+{
+    background-color:rgb(233, 227, 227);
+}
+.searchArea
+{
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+}
+#curPage
+{
+    position: relative;
+    left: 10%;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.restaurantImg
+{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.HotelDetails
+{
+    position: relative;
+    left: 10%;
+    text-align: left;
+    padding: 15px;
+}
+#hotelName
+{
+    font-weight: 800;
+    font-size: 30px;
+    padding: 10px;
+}
+#cusines
+{
+    font-weight: 300;
+}
+#cusines, #locality_verbose
+{
+    padding: 5px;
+}
+#isOpened
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+ul.menuBar{
+    position: relative;
+    list-style: none;
+    left: 8%;
+}
+li.menuItem{
+    display: inline;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 1px solid black;
+    margin: 0;
+    
+}
+li.menuItem:hover
+{
+    color: red;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.active
+{
+    color: blue;
+    border-bottom: 12px solid blue;
+}
+.restaurantContent
+{
+    position: relative;
+    left: 10%;
+    margin: 20px;
+}
+.resDiv: :hover
+{
+    border: 1px solid black;
+}
+.moreInfoListItem
+{
+    display: block;
+    border: 0px;
+    padding: 5px;
+    margin-left: 50px;
+
+}
+.abtTxt
+{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.highLights
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.listyle
+{
+    padding-right: 20px;
+}
+.profileName
+{
+    display: inline-block;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 17px;
+}
+.profileImgDiv
+{
+    display: inline-block;
+    float: left;
+}
+.reviewDiv
+{
+    clear: both;
+    background-color: rgb(253, 255, 254);
+    margin: 10px;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid black;
+}
+.ratingDiv2
+{
+    clear: both;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.reviewTxtDiv
+{
+    clear: both;
+    display: block;
+    padding: 10px;
+    width: 60%;
+}
+@media only screen and (max-width: 680px) 
+    {
+        #orderPageTitle
+        {
+            display: block;
+        }
+        .menuItem
+        {
+            
+            display: block;
+            margin: 10px;
+        }
+       
+    }
+@media only screen and (max-width: 550px) 
+{
+    .suggestionsDiv
+    {
+        left: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) 
+{
+    .suggestionsDiv
+    {
+        left: 30px;
+    }
+}
+#orderPageTitle
+{
+    font-family: 'Passion One', cursive;
+}
+#orderPageTitle:hover
+{
+    cursor: pointer;
+}
